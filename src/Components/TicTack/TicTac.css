@@ -1,0 +1,12 @@
+.slider {
+    width: 80%;
+  
+    /* background-color: aquamarine; */
+    margin: 100px auto;
+    overflow: auto;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  

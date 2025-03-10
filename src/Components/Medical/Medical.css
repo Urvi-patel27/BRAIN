@@ -1,0 +1,30 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    padding: 10px;
+    align-items: center;
+    width: max-content;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 200px;
+}

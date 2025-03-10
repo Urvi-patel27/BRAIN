@@ -1,0 +1,13 @@
+.slider {
+    width: 80%;
+    margin: 100px auto;
+    overflow: auto;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    width: 100%;
+}

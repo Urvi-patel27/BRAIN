@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+
+.process-container {
+    padding: 50px 0 200px;
+    text-align: center;
+    position: relative;
+}
+
+.process-card {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.process-icon {
+    font-size: 30px;
+    color: #fbbd08;
+}
+
+.process-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.process-desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+
+.way-value-section .col-md-3:nth-child(1),
+.way-value-section .col-md-3:nth-child(3) {
+    transform: translateY(30px);
+}
+
+.way-value-section .col-md-3:nth-child(2),
+.way-value-section .col-md-3:nth-child(4) {
+    transform: translateY(150px);
+}
+
+@media(max-width:1199px) {
+    .process-container {
+        padding: 0px 0px 200px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .way-value-section .col-md-3:nth-child(1),
+    .way-value-section .col-md-3:nth-child(3) {
+        transform: translateY(20px);
+    }
+}
+
+@media(max-width:991px) {
+
+    .way-value-section .col-md-3:nth-child(1),
+    .way-value-section .col-md-3:nth-child(3) {
+        /* transform: translateY(80px); */
+    }
+
+    .way-value-section .col-md-3:nth-child(2),
+    .way-value-section .col-md-3:nth-child(4) {
+        transform: translateY(100px);
+    }
+}
+
+@media(max-width:767px) {
+
+    .way-value-section .col-md-3:nth-child(1),
+    .way-value-section .col-md-3:nth-child(3) {
+        transform: translateY(20px);
+        transform: translatex(0px);
+
+    }
+
+    .way-value-section .col-md-3:nth-child(2),
+    .way-value-section .col-md-3:nth-child(4) {
+        transform: translateY(20px);
+    }
+
+
+}
+
+.wave-img img {
+    position: absolute;
+    top: 120px;
+}
+
+@media(max-width:767px) {
+    .wave-img img {
+        display: none;
+    }
+
+    .process-container {
+        padding: 70px 0 150px;
+        text-align: center;
+        position: relative;
+    }
+
+    .p-2-1-1-s {
+        margin-top: 50px;
+    }
+}
+
+.sec-title__taglinessssss {
+    color: white;
+    padding: 10px 20px;
+    background-color: #212529;
+    padding: 10px;
+}

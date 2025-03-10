@@ -1,0 +1,286 @@
+.service-three {
+    position: relative;
+    z-index: 1;
+    background-color: var(--ostech-secondary, #232429);
+    padding: 100px 0px;
+}
+
+@media (max-width: 991px) {
+    .service-three {
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-three {
+        padding: 80px 0px;
+    }
+}
+
+.service-three__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: -1;
+    opacity: 0.2;
+    animation: bgSlide 20s linear infinite;
+    background-image: url(../images/background/service-shape-2-1.png);
+}
+
+.service-three__carousel {
+    position: relative;
+    width: 100%;
+}
+
+.service-three__carousel .owl-dots {
+    margin-top: 60px !important;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .service-three__carousel .owl-dots {
+        top: auto;
+        bottom: 70px;
+    }
+}
+
+.service-three__carousel .owl-dots .owl-dot {
+    display: block;
+    margin: 6px 0;
+}
+
+@media (max-width: 767px) {
+    .service-three__carousel .owl-dots .owl-dot {
+        margin: 0 6px;
+    }
+}
+
+.service-three__carousel .owl-dots .owl-dot span {
+    display: block;
+    margin: 0;
+    transition: all 300ms ease;
+    width: 29.945px;
+    height: 29.945px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    background: transparent;
+}
+
+.service-three__carousel .owl-dots .owl-dot span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--ostech-text, #686A6F);
+}
+
+.service-three__carousel .owl-dots .owl-dot:hover span,
+.service-three__carousel .owl-dots .owl-dot.active span {
+    background: rgba(104, 106, 111, 0.23);
+}
+
+.service-three__carousel .owl-dots .owl-dot:hover span::before,
+.service-three__carousel .owl-dots .owl-dot.active span::before {
+    background: var(--ostech-base, #EE8624);
+}
+
+.service-three__item {
+    padding-top: 16px;
+}
+
+.service-three__item__inner {
+    position: relative;
+}
+
+.service-three__item__icon {
+    position: relative;
+}
+
+.service-three__item__icon__inner {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background: var(--ostech-secondary, #232429);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: var(--ostech-base, #EE8624);
+    margin-left: 60px;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-three__item__icon::after {
+    content: "";
+    border-radius: 50%;
+    background: var(--ostech-black, #171717);
+    position: absolute;
+    width: 122px;
+    height: 122px;
+    margin-left: 45px;
+    top: -15px;
+    z-index: -5;
+}
+
+.service-three__item__thumb {
+    position: relative;
+    max-height: 342px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.service-three__item__thumb img {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+.service-three__item__content {
+    position: relative;
+    margin-top: -35px;
+    padding: 20px 40px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    background: linear-gradient(90deg, #171717 50%, rgba(23, 23, 23, 0) 126.12%);
+}
+
+.service-three__item__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: var(--ostech-white, #fff);
+    transition: all 0.4s ease-in-out;
+}
+
+.service-three__item__title br {
+    display: block;
+}
+
+.service-three__item__title a {
+    color: inherit;
+    background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+    transition: all 500ms ease;
+}
+
+.service-three__item__title a:hover {
+    background-size: 100% 1px;
+}
+
+.service-three__item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48px;
+    width: 100%;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--ostech-base, #EE8624);
+}
+
+.service-three__item__link__icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-three__item__link__icon::after,
+.service-three__item__link__icon::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: var(--ostech-white, #fff);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.service-three__item__link__icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.service-three__item__link:hover {
+    background: rgba(35, 36, 41, 0.1);
+}
+
+.service-three__item__link:hover .service-three__item__link__icon::after,
+.service-three__item__link:hover .service-three__item__link__icon::before {
+    background: var(--ostech-secondary, #232429);
+}
+
+.service-three__item:hover .service-three__item__icon i {
+    animation: bounceIn 1s linear;
+}
+
+.service-three__item:hover .service-three__item__content {
+    background: var(--ostech-base, #EE8624);
+}
+
+.service-three__item:hover .service-three__item__title {
+    color: var(--ostech-secondary, #232429);
+}
+
+.service-three__item:hover .service-three__item__thumb img {
+    transform: scale(1.1);
+}
+
+.sec-title__title1 {
+    color: white;
+    font-size: 40px;
+}
+
+.sec-title__tagline1 {
+    color: white;
+}
+
+
+
+@keyframes bgSlide {
+    0% {
+        background-position: 0 0;
+    }
+
+    20% {
+        background-position: -100px 0;
+    }
+
+    40% {
+        background-position: -200px 0;
+    }
+
+    60% {
+        background-position: -150px 0;
+    }
+
+    80% {
+        background-position: -100px 0;
+    }
+
+    100% {
+        background-position: 0px 0;
+    }
+}

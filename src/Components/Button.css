@@ -1,0 +1,78 @@
+.ostech-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    background-color: var(--ostech-base, #ee8624);
+    color: var(--ostech-text-dark, #222429);
+    font-family: var(--ostech-font, "Barlow", sans-serif);
+    transition: 500ms;
+    background-color: var(--ostech-base, #ee8624);
+    color: var(--ostech-text-dark, #222429);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 112.5%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.ostech-btn:hover {
+    color: var(--ostech-base, #ee8624);
+    background-color: var(--ostech-text-dark, #222429);
+}
+
+.ostech-btn:before {
+    content: "";
+    background-color: var(--ostech-secondary, #232429);
+    width: 0;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.ostech-btn:after {
+    content: "";
+    background-color: var(--ostech-secondary, #232429);
+    width: 0;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.ostech-btn:hover {
+    color: var(--ostech-white, #fff);
+}
+
+.ostech-btn:hover:before,
+.ostech-btn:hover:after {
+    width: 100%;
+}
+
+.ostech-btn--secondary {
+    background: var(--ostech-secondary, #ee8624);
+    color: var(--ostech-white, #fff);
+}
+
+.ostech-btn--secondary:before {
+    background-color: var(--ostech-base, #ee8624);
+}
+
+.ostech-btn--secondary:after {
+    background-color: var(--ostech-base, #ee8624);
+}
+
+.ostech-btn--secondary:hover {
+    color: var(--ostech-text-dark, #222429);
+}
