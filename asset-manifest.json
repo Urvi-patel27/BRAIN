@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BRAIN/static/css/main.1d9d0370.css",
-    "main.js": "/BRAIN/static/js/main.8151009f.js",
+    "main.js": "/BRAIN/static/js/main.f8b77fe7.js",
     "static/js/453.7ce565e9.chunk.js": "/BRAIN/static/js/453.7ce565e9.chunk.js",
     "static/media/frame6.jpg.png": "/BRAIN/static/media/frame6.jpg.83842572288e77d84b63.png",
     "static/media/gamemain.jpg": "/BRAIN/static/media/gamemain.a3f307a8eb5043f14d54.jpg",
@@ -63,11 +63,11 @@
     "index.html": "/BRAIN/index.html",
     "static/media/slick.woff": "/BRAIN/static/media/slick.295183786cd8a1389865.woff",
     "main.1d9d0370.css.map": "/BRAIN/static/css/main.1d9d0370.css.map",
-    "main.8151009f.js.map": "/BRAIN/static/js/main.8151009f.js.map",
+    "main.f8b77fe7.js.map": "/BRAIN/static/js/main.f8b77fe7.js.map",
     "453.7ce565e9.chunk.js.map": "/BRAIN/static/js/453.7ce565e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d9d0370.css",
-    "static/js/main.8151009f.js"
+    "static/js/main.f8b77fe7.js"
   ]
 }
